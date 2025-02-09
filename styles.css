@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px; /* Maximum width for larger screens */
+    margin: 50px auto;
+    padding: 20px;
+    background: #2c2c2c; /* Darker container */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #9b59b6; /* Violet color */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch targets */
+    border: 1px solid #9b59b6; /* Violet border */
+    border-radius: 4px;
+    background-color: #3c3c3c; /* Darker input background */
+    color: #e0e0e0; /* Light text color */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input:focus, select:focus {
+    border-color: #8e44ad; /* Lighter violet on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch targets */
+    background-color: #9b59b6; /* Violet button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #8e44ad; /* Darker violet on hover */
+}
+
+/* Message Styles */
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold; /* Bold messages */
+}
+
+.message.success {
+    color: #2ecc71; /* Green color for success messages */
+}
+
+.message.error {
+    color: #e74c3c; /* Red color for error messages */
+}
+
+/* User List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Space above the user list */
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Darker border for list items */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+li:hover {
+    background-color: #3c3c3c; /* Highlight on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Full width on smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text on mobile */
+    }
+}
+/* Modal Styles */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: #2c2c2c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #9b59b6;
+    width: 80%;
+    max-width: 500px; /* Maximum width for modal */
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
